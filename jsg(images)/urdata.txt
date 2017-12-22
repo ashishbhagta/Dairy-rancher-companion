@@ -1,0 +1,3 @@
+name:Aanchal
+address:bathinda
+college/company:gzs
