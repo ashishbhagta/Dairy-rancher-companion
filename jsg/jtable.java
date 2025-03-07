@@ -89,7 +89,7 @@ data.addElement(row);
 }
 rs.close();
 pstmt.close();
-table = new JTable(data,columnNames);
+table = new JTable((TableModel) data, (TableColumnModel) columnNames);
 JScrollPane scrollPane = new JScrollPane( table );
 table.setBackground(Color.YELLOW);
 table.setSelectionBackground(Color.red);

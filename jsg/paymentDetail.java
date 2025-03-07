@@ -27,6 +27,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.border.Border;
+import javax.swing.table.TableColumnModel;
+import javax.swing.table.TableModel;
 
 class detail extends JFrame
 { 
@@ -190,7 +192,7 @@ class detail extends JFrame
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-			s.click.play();
+			//s.click.play();
 			delete();
 			dispose();
 			}
@@ -209,7 +211,7 @@ class detail extends JFrame
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				s.click.play();
+			//	s.click.play();
 				String msg=SST_SMS.bceSunSoftSend(txtmbl.getText(),txtmsg.getText());
 				/*if(msg.equals("sent"))
 				JOptionPane.showMessageDialog(null, msg);
@@ -312,7 +314,7 @@ class detail extends JFrame
 			}
 			rs.close();
 			pst.close();
-			table = new JTable(data,columnNames);
+			table = new JTable((TableModel) data, (TableColumnModel) columnNames);
 			JScrollPane scrollPane = new JScrollPane( table );
             table.addMouseListener(new MouseListener() {
 				
@@ -398,7 +400,7 @@ class detail extends JFrame
 			}
 			rs.close();
 			pst.close();
-			table = new JTable(data,columnNames);
+			table = new JTable((TableModel) data, (TableColumnModel) columnNames);
 			JScrollPane scrollPane = new JScrollPane( table );
 			table.addMouseListener(new MouseListener() {
 				

@@ -31,7 +31,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.border.Border;
 
-class record extends JFrame
+class recordg extends JFrame
 {
 	Connection con;
 	JPanel pnl1,pnl2,pnl3,pnl4;
@@ -46,7 +46,7 @@ class record extends JFrame
 	ImageIcon ico,ico1,ico2;
 	PreparedStatement pst;
 	soundPlay s=new soundPlay();
-	record()
+	recordg()
 	{
 		con=connectFile.getConnection();
 		if(con==null)
@@ -352,7 +352,7 @@ class record extends JFrame
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				s.click.play();
+				//s.click.play();
 			dispose();	
 			}
 		});
@@ -369,7 +369,7 @@ class record extends JFrame
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				s.click.play();
+				//s.click.play();
 				if(lst.getSelectedIndex()==0)
 					JOptionPane.showMessageDialog(null,"please select id");
 				else
@@ -536,7 +536,7 @@ class record extends JFrame
 public class milkDeliveryRecord {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-record r=new record();
+recordg r=new recordg();
 r.fetchIds();
 	}
 

@@ -434,7 +434,7 @@ class Customer extends JFrame
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				//if(ids.getSelectedItem().toString().length()==0)
-				s.click.play();
+				//s.click.play();
 				if(ids.getSelectedIndex()==0)
 				JOptionPane.showMessageDialog(null,"please enter id");
 				if(d.getSelectedIndex()==0)
@@ -462,7 +462,7 @@ class Customer extends JFrame
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				s.click.play();
+				//s.click.play();
 			ids.setSelectedItem(null);
 			txtname.setText(null);
 			txtmbl.setText(null);
@@ -496,7 +496,7 @@ class Customer extends JFrame
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				s.click.play();
+				//s.click.play();
 			update();	
 			}
 		});
@@ -515,7 +515,7 @@ class Customer extends JFrame
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				s.click.play();
+			//	s.click.play();
 			delete();	
 			}
 		});
@@ -534,7 +534,7 @@ class Customer extends JFrame
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				s.click.play();
+			//	s.click.play();
 			dispose();	
 			}
 		});
@@ -552,7 +552,7 @@ class Customer extends JFrame
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				s.click.play();
+			//	s.click.play();
 				if(ids.getSelectedIndex()!=0)
 				{
 				 String id=ids.getSelectedItem().toString(); 

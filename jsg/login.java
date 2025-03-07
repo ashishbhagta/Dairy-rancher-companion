@@ -95,7 +95,7 @@ pwd.addFocusListener(new FocusListener() {
 	@Override
 	public void focusLost(FocusEvent e) {
 		// TODO Auto-generated method stub
-		s.click.play();
+		//s.click.play();
 		String exp="(?=^.{8,}$)(?=.*\\d)(?=.*[!@#$%^&*]+)(?![.\\n])(?=.*[A-Z])(?=.*[a-z]).*$";
 		char pw[]= pwd.getPassword();
 		String ss=new String(pw);
@@ -125,7 +125,7 @@ add(login);
 login.addActionListener(new ActionListener() {
 @Override
 public void actionPerformed(ActionEvent e) {
-s.click.play();
+//s.click.play();
 showhomepage();
 openhomepage();
 }
@@ -143,7 +143,7 @@ chngepwd.addActionListener(new ActionListener() {
 @Override
 public void actionPerformed(ActionEvent e) {
 // TODO Auto-generated method stub
-	s.click.play();
+	//s.click.play();
 updatepwd.main(new String[]{});
 }
 });
@@ -160,7 +160,7 @@ forgetpwd.addActionListener(new ActionListener() {
 @Override
 public void actionPerformed(ActionEvent e) {
 // TODO Auto-generated method stub
-	s.click.play();
+	//s.click.play();
 forgotPwd();
 
 }

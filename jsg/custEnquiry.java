@@ -23,6 +23,8 @@ import javax.swing.JRootPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.border.Border;
+import javax.swing.table.TableColumnModel;
+import javax.swing.table.TableModel;
 
 class enquiry extends JFrame
 {
@@ -225,7 +227,7 @@ class enquiry extends JFrame
 			}
 			rs.close();
 			pst.close();
-			table = new JTable(data,columnNames);
+			table = new JTable((TableModel) data, (TableColumnModel) columnNames);
 			JScrollPane scrollPane = new JScrollPane( table );
 			table.setBackground(Color.green);
 			table.setSelectionBackground(Color.yellow);
